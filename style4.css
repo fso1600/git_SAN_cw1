@@ -1,0 +1,84 @@
+.nav-wrapper{
+width: 100%;
+margin: 0 auto;
+border: 1px solid gray;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* nav li - oznacza że ta reguła odnosi się do li w nav a li poza nav pozostaną bez zmian */
+
+nav a{
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav ul li{
+    margin: 10px;
+    color: slategrey;
+}
+
+nav ul li:hover{
+background-color: silver;
+font-weight: bold;
+border-radius: 5px;
+}
+
+main{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+main div{
+    margin: 10px;
+    flex-basis: 300px;
+    border: 1px solid black;
+}
+
+main div p{
+    text-align: justify;
+    text-indent: 20px;
+    margin: 10px;
+}
+
+main div:hover{
+    background-color: rgb(24, 177, 151);
+}
+
+main div{
+    transform: 0.3;
+    animation: ok;
+    animation: ok 3s 1.2s;
+    animation-fill-mode: forwards;
+}
+
+/* Keyframes */
+
+@keyframes ok{
+    from{
+transform: translateY(0);
+    }
+    to{
+transform: translateY(100px);
+    }
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 768px){
+    nav ul{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    
+}
